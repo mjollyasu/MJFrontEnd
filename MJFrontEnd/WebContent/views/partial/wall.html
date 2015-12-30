@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Wall</h3>
+	</div>
+	<div class="panel-body">
+	
+		<!-- Preview new public message -->
+		<div class = "row">
+			<div class="col-lg-12">
+				<blockquote ng-show = "!msgCtrl.msgOut.private_ && msgCtrl.msgOut.message.length > 0">
+					{{msgCtrl.msgOut.message}}
+					<br/>
+					<cite>-{{msgCtrl.msgOut.username}}</cite>
+				</blockquote>
+			</div>
+		</div>
+		
+		<!-- Show all public messages -->
+		<div class = "row">
+			<div class="col-lg-12">
+				<div class = "row" ng-repeat = "m in msgCtrl.callMsgSvc()">
+					<div class = "col-lg-12">										
+						{{m.message}}
+						<br/>
+						<cite>-{{m.username}} <br/> {{m.createdAt}}</cite>
+						<br/><br/>
+					</div>
+				</div>
+			</div>
+		</div>
+							
+	</div>
+</div>

@@ -1,0 +1,41 @@
+
+.panel
+{
+	background-color:gray;
+	color:white !important;
+}
+
+li
+{
+	color:white;
+}
+
+a
+{
+	color:white;
+}
+
+.bufferRow
+{
+	height:50px;
+}
+
+.unhovered
+{
+	background-color:black;
+	border: 1px solid black;
+}
+
+.hovered
+{
+	color:black !important;
+	background-color:white !important; 
+	border: 1px solid white !important;
+}
+
+
+#contactHead
+{
+	color:white;
+}
+
