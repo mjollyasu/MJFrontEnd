@@ -1,0 +1,42 @@
+<link href="css/mainHeader.css" rel="stylesheet" type="text/css" />
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+    	<!-- Initials and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		    	<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+	      
+	      	<ul class="nav navbar-nav navbar-left">
+	      		<li id = "br" ng-class="{white: hoverB}" 
+		    	ng-mouseenter="hoverB = true" ng-mouseleave="hoverB = false">
+	      		<a class="navbar-brand"   href="#/">MJ</a>
+	      	</li>
+	    	</ul>
+		</div>
+
+		<!-- Navigation buttons -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      	<ul class="nav navbar-nav navbar-right">
+		      	<li ng-class="{white: hoverC}" 
+			    	ng-mouseenter="hoverC = true" ng-mouseleave="hoverC = false">
+			      	<a  href="#/contact">Contact</a>
+			    </li>
+			    
+			    <li ng-class="{white: hoverR}" 
+			    	ng-mouseenter="hoverR = true" ng-mouseleave="hoverR = false">
+			      	<a href="#/resume">Resume</a>
+			    </li>
+			    
+			    <li ng-class="{white: hoverA}" 
+			    	ng-mouseenter="hoverA = true" ng-mouseleave="hoverA = false">
+			      	<a href="#/about">About</a>
+			  	</li>
+		  	</ul>
+		</div>
+  	</div>
+</nav>
